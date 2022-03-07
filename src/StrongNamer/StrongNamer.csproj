@@ -4,7 +4,7 @@
     <AssemblyOriginatorKeyFile>SharedKey.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <SignAssembly>true</SignAssembly>
-    <Authors>Daniel Plaisted</Authors>
+    <Authors>Daniel Plaisted, Sajid</Authors>
     <Title>Strong Namer - Automatically Add Strong Names to References</Title>
     <PackageProjectUrl>https://github.com/sajidur78/strongnamer</PackageProjectUrl>
     <RepositoryUrl></RepositoryUrl>
@@ -18,6 +18,7 @@
 
     <CecilVersion>0.11.0</CecilVersion>
     <LangVersion>latest</LangVersion>
+    <PackageId>Sajidur78.$(AssemblyName)</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
