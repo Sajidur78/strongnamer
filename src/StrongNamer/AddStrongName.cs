@@ -140,6 +140,12 @@ namespace StrongNamer
                 AssemblyResolver = resolver
             }))
             {
+                if (assembly.Name.IsWindowsRuntime)
+                {
+                    Log.LogMessage(MessageImportance.Low, $"Assembly file '{assemblyItem.ItemSpec}' is windows runtime.  Skipping.");
+                    return assemblyItem;
+                }
+
                 if (assembly.Name.HasPublicKey)
                 {
                     Log.LogMessage(MessageImportance.Low, $"Assembly file '{assemblyItem.ItemSpec}' is already signed.  Skipping.");

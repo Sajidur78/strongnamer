@@ -6,7 +6,7 @@
     <SignAssembly>true</SignAssembly>
     <Authors>Daniel Plaisted</Authors>
     <Title>Strong Namer - Automatically Add Strong Names to References</Title>
-    <PackageProjectUrl>https://github.com/dsplaisted/strongnamer</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/sajidur78/strongnamer</PackageProjectUrl>
     <RepositoryUrl></RepositoryUrl>
     <RepositoryType></RepositoryType>
     <PackageTags>strongname strong name naming</PackageTags>
@@ -43,7 +43,7 @@
       <FileToCopy Include="SharedKey.snk" />
     </ItemGroup>
     
-    <Copy SourceFiles="@(FileToCopy)" DestinationFolder="$(MSBuildThisFileDirectory)bin\$(Configuration)"/>
+    <Copy SourceFiles="@(FileToCopy)" DestinationFolder="$(MSBuildThisFileDirectory)bin\$(Configuration)" />
     
   </Target>
 </Project>
