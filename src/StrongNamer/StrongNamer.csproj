@@ -27,8 +27,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <None Include="StrongNamer.targets" Pack="true" PackagePath="build" />
     <None Include="SharedKey.snk" Pack="true" PackagePath="build" />
+    <None Include="Sajidur78.StrongNamer.targets" Pack="true" PackagePath="build" />
     <None Include="$(NuGetPackageRoot)mono.cecil\$(CecilVersion)\lib\net40\*.dll" CopyToOutputDirectory="PreserveNewest" Pack="true" PackagePath="build\net461" Visible="false" />
     <None Include="$(NuGetPackageRoot)mono.cecil\$(CecilVersion)\lib\netstandard2.0\*.dll" CopyToOutputDirectory="PreserveNewest" Pack="true" PackagePath="build\netcoreapp2.1" Visible="false" />
   </ItemGroup>
@@ -40,7 +40,7 @@
   <Target Name="CopyFilesToOutputForTesting" BeforeTargets="CoreCompile">
 
     <ItemGroup>
-      <FileToCopy Include="StrongNamer.targets" />
+      <FileToCopy Include="Sajidur78.StrongNamer.targets" />
       <FileToCopy Include="SharedKey.snk" />
     </ItemGroup>
     
